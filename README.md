@@ -15,8 +15,8 @@
 ## Spawn Simplism processes
 
 ```bash
-ADMIN_SPAWN_TOKEN=le-compte-zaroff-est-un-etre-etrange
-ADMIN_DISCOVERY_TOKEN=les-blobs-attaquent-la-plage
+ADMIN_SPAWN_TOKEN=this-is-your-token
+ADMIN_DISCOVERY_TOKEN=this-is-another-token
 
 ORGANISATION="simplism-registry"
 PROJECT="say-hello"
@@ -35,7 +35,6 @@ https://simplism-faas-bots-garden.koyeb.app/spawn \
     "http-port":"9091", 
     "discovery-endpoint":"http://localhost:8080/discovery", 
     "admin-discovery-token":"${ADMIN_DISCOVERY_TOKEN}",
-    "admin-spawn-token":"${ADMIN_SPAWN_TOKEN}",
     "information": "✋ I'm the say_hello service",
     "service-name": "say-hello"
 }
@@ -57,7 +56,6 @@ https://simplism-faas-bots-garden.koyeb.app/spawn \
     "http-port":"9092", 
     "discovery-endpoint":"http://localhost:8080/discovery", 
     "admin-discovery-token":"${ADMIN_DISCOVERY_TOKEN}",
-    "admin-spawn-token":"${ADMIN_SPAWN_TOKEN}",
     "information": "✋ I'm the hello service",
     "service-name": "hello"
 }
